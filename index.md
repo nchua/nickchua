@@ -2,9 +2,9 @@
 
 I am a 22 year old Bay Area native living in Chicago, IL. In my previous life I played varsity tennis at the University of Chicago, and you can find my record [here](https://athletics.uchicago.edu/sports/mten/2017-18/bios/chua_nicolas_49g3?view=bio). I currently work as an analyst at Inoca Capital Partners and am parimarily interested in how technology causes paradigm shifts in social norms. 
 
-### Interests
+# Interests
 
-# Books
+## Books
 I am an avid reader of science fiction and fantasy. My favorite authors include: Patrick Rothfuss, Brent Weeks, R.A. Salvatore, and Steven Erikson. My past and present favorite series are The Kingkiller Chronicles, Night Angel Trilogy, and Eragon. I am also a fan of Star Wars novelizations, but refuse to read any material covering the new trilogy. If you know of any series that fit a similar profile I would love to know!
 
 For non-casual reading, I typically enjoy autobiographies of people I admire or books that imagines new use cases for recent research. Some favorites of mine include Robert Kiyosaki's Rich Dad Poor Dad, Pete Sampras' A Champion's Mind, and Daniel Kahneman's Thinking Fast and Slow. I am currently reading Steven Kaplan's paper "Which CEO Characteristics and Abilities Matter". 
