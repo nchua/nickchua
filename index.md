@@ -1,6 +1,6 @@
 ## Hi, I'm Nick!
 
-I am a 22 year old Bay Area native living in Chicago, IL. In my previous life I played varsity tennis at the University of Chicago - you can find my record [here](https://athletics.uchicago.edu/sports/mten/2017-18/bios/chua_nicolas_49g3?view=bio). I currently work as an analyst at Inoca Capital Partners and am parimarily interested in how technology causes paradigm shifts in social norms. 
+I am a 22 year old Bay Area native living in Chicago, IL. In my previous life I played varsity tennis at the University of Chicago - you can find my record [here](https://athletics.uchicago.edu/sports/mten/2017-18/bios/chua_nicolas_49g3?view=bio). I currently work as an analyst at Inoca Capital Partners and am primarily interested in how technology causes paradigm shifts in social norms. 
 
 ***
 ## Interests
