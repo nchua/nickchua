@@ -19,3 +19,6 @@ I believe that one day e-sports will become the norm rather than the *other*. No
 I firmly believe that this change will come within my lifetime. The NBA Finals in 2016 was watched by a record-breaking number of viewers, as Lebron James led the Cleveland Cavaliers over the dominant 73 win Warrios. But if Riot Games (creators of League of Legends) is to be believed, even more people watched the League of Legends World Championship Finals than the [NBA Finals](https://www.kotaku.com.au/2016/06/more-people-watched-league-of-legends-than-the-nba-finals/). The acceptance of E-sports will be gradual, but will fundamentally change the social landscape. I believe this will have large economic ramifications as E-sports will act as a disruptor of traditional sports rather than parallel competitor. 
 
 I am currently following the League of Legends scene. When I publish articles or thoughts on the scene, you will be able to find them *here*.
+
+### Food
+My favorite foods in descending order are: Taiwanese Beef Noodle Soup, Ramen, Poke, Carne Asada Burrito, Lamb Vindaloo, and Tiramisu. I've made it my goal to review every ramen shop in the Chicago area, you can find my blog [here](https://nickchua14.wixsite.com/ramen4lyfe). If you have any recommendations in Chicago or the Bay Area, please send them to me.
