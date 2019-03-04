@@ -1,8 +1,11 @@
-## Welcome to my website
+## Hi, I'm Nick!
 
-I am a 22 year old Bay Area native living in Chicago, IL. In my previous life I played varsity tennis at the University of Chicago, and you can find my record [here](https://athletics.uchicago.edu/sports/mten/2017-18/bios/chua_nicolas_49g3?view=bio).
+I am a 22 year old Bay Area native living in Chicago, IL. In my previous life I played varsity tennis at the University of Chicago, and you can find my record [here](https://athletics.uchicago.edu/sports/mten/2017-18/bios/chua_nicolas_49g3?view=bio). I currently work as an analyst at Inoca Capital Partners 
 
-### Markdown
+### Interests
+
+# Books
+For casual reading I am an avid reader of science fiction and fantasy. My favorite authors include: Patrick Rothfuss, Brent Weeks, R.A. Salvatore, and Steven Erikson. 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
