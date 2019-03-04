@@ -10,32 +10,9 @@ I am an avid reader of science fiction and fantasy. My favorite authors include:
 
 For non-casual reading, I typically enjoy autobiographies of people I admire or books that imagines new use cases for recent research. Some favorites of mine include Robert Kiyosaki's Rich Dad Poor Dad, Pete Sampras' A Champion's Mind, and Daniel Kahneman's Thinking Fast and Slow. I am currently reading Steven Kaplan's paper "Which CEO Characteristics and Abilities Matter". 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### E-Sports
+I believe that one day e-sports will become the norm rather than the *other*. Not everyone is born with the natural gifts of Lebron James, nor can everyone  afford expensive treatments such as the ones Lionel Messi received. However, to a certain extent, everyone can identify with the gifts of a professional gamer. I believe that as the social stigma of video games declines and health concerns over contact sports increase, e-sports will rise in popularity and become normalized. This can be seen already in countries such as South Korea, and to a certain extent the United States. Large traditional sports franchises such as the Golden State Warrios, Houston Rockets, and the Cleveland Cavaliers have invested with conglomerates such as The Walt Disney Company in League of Legends teams. 
 
-```markdown
-Syntax highlighted code block
+I firmly believe that this change will come within my lifetime. The NBA Finals in 2016 was watched by a recrod-breaking number of viewers, as Lebron James the Cleveland Cavaliers over the dominant 73 win Warrios. But if Riot Games (creators of League of Legends) is to be believed, even more people watched the League of Legends World Championship Finals than the [NBA Finals](https://www.kotaku.com.au/2016/06/more-people-watched-league-of-legends-than-the-nba-finals/). The acceptance of E-sports will be gradual, but will fundamentally cahnge the social landscape. I am excited to follow this change.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nchua/nickchua/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+I am currently following the League of Legends scene. When I publish articles or thoughts on the scene, you will be able to find them *here*.
