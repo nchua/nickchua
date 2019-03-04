@@ -1,6 +1,6 @@
 ## Welcome to my website
 
-I am a 22 year old Bay Area native living in Chicago, IL. In my previous life I played varsity tennis at the University of Chicago, and you can find my record [here] (https://athletics.uchicago.edu/sports/mten/2017-18/bios/chua_nicolas_49g3?view=bio]).
+I am a 22 year old Bay Area native living in Chicago, IL. In my previous life I played varsity tennis at the University of Chicago, and you can find my record [here] (https://athletics.uchicago.edu/sports/mten/2017-18/bios/chua_nicolas_49g3?view=bio).
 
 ### Markdown
 
