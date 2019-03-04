@@ -6,7 +6,7 @@ I am a 22 year old Bay Area native living in Chicago, IL. In my previous life I 
 ## Interests
 
 ### Wearable Technology
-Advances in wearable technology fascinates me as we become ever more connected to our online presences. I am currently following Focals by North and the Levi's Commuter X Jacquard by Google. 
+Advances in wearable technology fascinates me as we become ever more connected to our online presences. I am currently following and waiting to purchase the Focals by North and the Levi's Commuter X Jacquard by Google once their prohibitive prices decline. 
 
 ### Books
 I am an avid reader of science fiction and fantasy. My favorite authors include: Patrick Rothfuss, Brent Weeks, R.A. Salvatore, and Steven Erikson. My past and present favorite series are The Kingkiller Chronicles, Night Angel Trilogy, and Eragon. I am also a fan of Star Wars novelizations, but refuse to read any material covering the new trilogy. If you know of any series that fit a similar profile I would love to know!
