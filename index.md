@@ -2,7 +2,8 @@
 
 I am a 22 year old Bay Area native living in Chicago, IL. In my previous life I played varsity tennis at the University of Chicago, and you can find my record [here](https://athletics.uchicago.edu/sports/mten/2017-18/bios/chua_nicolas_49g3?view=bio). I currently work as an analyst at Inoca Capital Partners and am parimarily interested in how technology causes paradigm shifts in social norms. 
 
-__## Interests__
+***
+## Interests
 
 ## Books
 I am an avid reader of science fiction and fantasy. My favorite authors include: Patrick Rothfuss, Brent Weeks, R.A. Salvatore, and Steven Erikson. My past and present favorite series are The Kingkiller Chronicles, Night Angel Trilogy, and Eragon. I am also a fan of Star Wars novelizations, but refuse to read any material covering the new trilogy. If you know of any series that fit a similar profile I would love to know!
