@@ -1,4 +1,4 @@
 ## Hi, I'm Nick!
 
-[about me](/about)
+[about me](/nickchua/about)
 [test page](/nindex)
