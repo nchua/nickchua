@@ -5,6 +5,8 @@ I am a 22 year old Bay Area native living in Chicago, IL. In my previous life I 
 ***
 ## Interests
 
+lol 
+
 ### Wearable Technology
 Advances in wearable technology fascinates me as we become ever more connected to our online presences. I am currently following and waiting to purchase the Focals by North and the Levi's Commuter X Jacquard by Google once their prohibitive prices decline. 
 
