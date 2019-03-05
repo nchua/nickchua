@@ -2,10 +2,7 @@
 
 I am a 22 year old Bay Area native living in Chicago, IL. In my previous life I played varsity tennis at the University of Chicago - you can find my record [here](https://athletics.uchicago.edu/sports/mten/2017-18/bios/chua_nicolas_49g3?view=bio). I currently work as an analyst at Inoca Capital Partners and am primarily interested in how technology causes paradigm shifts in social norms. 
 
-***
 ## Interests
-
-lol 
 
 ### Wearable Technology
 Advances in wearable technology fascinates me as we become ever more connected to our online presences. I am currently following and waiting to purchase the Focals by North and the Levi's Commuter X Jacquard by Google once their prohibitive prices decline. 
@@ -24,3 +21,6 @@ I am currently following the League of Legends scene. When I publish articles or
 
 ### Food
 My favorite foods in descending order are: Taiwanese Beef Noodle Soup, Ramen, Poke, Carne Asada Burrito, Lamb Vindaloo, and Tiramisu. I've made it my goal to review every ramen shop in the Chicago area, you can find my blog [here](https://nickchua14.wixsite.com/ramen4lyfe). If you have any recommendations in Chicago or the Bay Area, please send them to me.
+
+### Movies 
+
