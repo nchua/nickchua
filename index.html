@@ -2,25 +2,39 @@
 <html lang="en">
 <head>
   <title>Nick Chua</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
-  img{
-  	margin-left: auto;
-  	margin-right: auto;
-  	max-width: 30%;
-  	max-height: 30%;
-  }
-  h1, h2, h3, h4, h5{
-  	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  }
-  p {
-  	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  }
-</style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134230119-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-134230119-1');
+        </script>
+        <title>Nick Chua | Experience</title>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="materialize.css"  media="screen,projection"/>
+        <!--Google font for text-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500" rel="stylesheet">
+        <link rel="icon" href="static/favicon.ico">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- overwrite some of the stylesheet -->
+        <style>
+      a {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      }
+      h1, h2, h3, h4, h5{
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      }
+      p {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      }
+      li {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      }
+        </style>
 
 </head>
 <body style="background-color: #F0F8FF; text-align: center">
@@ -51,7 +65,54 @@
 					</nav>
 				</div>
 			</header>
+		</div>
+	</div>
+</div>
+          <div class="fixed-action-btn">
+            <a class="btn-floating btn-large pink lighten-2">
+              <i class="large material-icons">dehaze</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating pink accent-4 tooltipped" data-position="top" data-tooltip="About me" href="nickchua/me"><i class="material-icons">mood</i></a></li>
+                <li><a class="btn-floating pink accent-3 tooltipped" data-position="top" data-tooltip="Experience" href="nickchua/experience"><i class="material-icons">library_books</i></a></li>
+                <li><a class="btn-floating pink accent-2 tooltipped" data-position="top" data-tooltip="Blog" href="nickchua/blog.html"><i class="material-icons">lightbulb_outline</i></a></li>
+                <li><a class="btn-floating pink accent-1 tooltipped" data-position="top" data-tooltip="Home" href="nickchua"><i class="material-icons">home</i></a></li>
+            </ul>
+          </div>
 
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="materialize.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+              direction: 'left'
+            });
+          });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.scrollspy');
+                var instances = M.ScrollSpy.init(elems, {});
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.pushpin');
+                var instances = M.Pushpin.init(elems, {});
+            });
+        </script>
+        <script>
+            $('#toc').pushpin({
+                top: $('#toc').offset().top
+            });
+        </script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems, {});
+        });
+        </script>
 
 </body>
 </html>
