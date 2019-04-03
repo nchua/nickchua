@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" initial-scale="1">
+  <meta name="description" content="Nick Chua is a Private Equity analyst">
+  <title>Nick Chua</title>
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/brands.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+</head>
+<body>
+  <div class="wrapper">
+    <div class="site site-blog sub-page">
+    <section class="animated fadeIn">
+      <div class="nav-links">
+        <div class="wrapper--nav">
+          <div class="page-title">
+            <a href="/"><h1>Nick Chua</h1></a>
+          </div>
+          <div class="page-links">
+            <a href="/about" ><button class="btn-no-outline">about me</button></a>
+            <a href="/blog" ><button class="btn-no-outline">blog</button></a>
+            <a href="/readinglist"><button class="btn-no-outline">reading list</button></a>
+            <a href="/exp" class="contact-btn"><button class="btn-no-outline">experience  </button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="animated fadeIn">
+      <header class="page-header">
+        <h2>My Blog </h2>
+        <p>This is meant to be a weekly blog where I discuss articles I've read, podcasts I've listened to, or write down general thoughts. I am most interested in evolutions in technology, e-sports, and the VC/PE world. I will also occasionally write about other topics that occupy my attention, like the upcoming Avenger movie or Star Wars series. I can shamelessly admit that I am not as knowledgeable as any partner at a VC fund or even most bloggers, thus my writings will be mostly reactionary. Feedback and criticism are more than welcome, and you can reach me<!--&nbsp;--><a href="mailto:nick@nickchua.me" target="_blank"> here.</p>
+
+        <h2><a href="/bp2">The Marvelous Reason I Cannot Die</a></h2>
+        <p style="font-size: 10px">April 1st, 2019 </p>
+        <p>
+          Freddie Mercury is gone, the new Star Wars universe is in shambles, and the Back to the Future hoverboards are four years late. But for one reason, I can't die yet...
+        </p>
+        <a href="/bp2"><button class="btn-no-outline">READ MORE</button></a>
+
+        <h2><a href="/bp1">Tesla and the Future of Locomotion</a></h2>
+        <p style="font-size: 10px">March 24th, 2019 </p>
+        <p>
+          What separates Tesla from other traditional car companies? Do they have enough of a competitive advantage to separate themselves from Waymo and Cruise? This blog draws inspiration from Ben Evans' <a href="https://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption"><i>Tesla, software and disruption</i></a> and explores why I believe there is an impending oligopolisitic revolution in the transportation industry. 
+        </p>
+        <a href="/bp1"><button class="btn-no-outline">READ MORE</button></a>
+
+
+          
+  
+</header>
+<!--<body style="background-color: #F0F8FF">  
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="center-align" style="padding-top: 100px; text-align: center">
+          My Blog
+        </h1>
+      </div>
+    </div>
+
+
+    <div class="col hide-on-small-only m3 l2">
+      <ul id="toc" class="section table-of-contents">
+        <li><a href="#e1">Entry 1</a></li>
+        <li><a href="#e2">Entry 2</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large pink lighten-2">
+      <i class="large material-icons">dehaze</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating pink accent-4 tooltipped" data-position="top" data-tooltip="About me" href="/me"><i class="material-icons">mood</i></a></li>
+      <li><a class="btn-floating pink accent-3 tooltipped" data-position="top" data-tooltip="Experience" href="/experience"><i class="material-icons">library_books</i></a></li>
+      <li><a class="btn-floating pink accent-2 tooltipped" data-position="top" data-tooltip="Blog" href="/blog"><i class="material-icons">lightbulb_outline</i></a></li>
+      <li><a class="btn-floating pink accent-1 tooltipped" data-position="top" data-tooltip="Home" href="/nickchua"><i class="material-icons">home</i></a></li>
+    </ul>
+  </div>
+  
+
+</div>
+-->
+<!-- Javascript added from MIT -->
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="materialize.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'left'
+    });
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems, options);
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.pushpin');
+    var instances = M.Pushpin.init(elems, {});
+  });
+</script>
+<script>
+    $('#toc').pushpin({
+      top: $('#toc').offset().top
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible.expandable');
+    var instances = M.Collapsible.init(elems, {
+      accordion: false
+    });
+  });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.tooltipped');
+      var instances = M.Tooltip.init(elems, {});
+  });
+</script>
+
+</body>
+</html>
