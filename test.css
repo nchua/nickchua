@@ -19,7 +19,7 @@
 .site-home .about p{padding:0 5.805em 1em 5.805em}
 .site-home .about p a{border-bottom:1px solid}
 .site-home .about .shapes .shapes--left{-webkit-animation-delay:1s;animation-delay:1s;width:30%}
-.site-home .about .shapes .shapes--right{-webkit-animation-delay:1.2s;animation-delay:1.2s;position:absolute;right:0;top:25%;width:20%}
+.site-home .about .shapes .shapes--right{-webkit-animation-delay:1.2s;animation-delay:1.2s;position:absolute;right:0; top: 10%; width:20%}
 .contact{padding-top:1.728em;position:relative}
 .contact .social-links{position:absolute;left:0}
 .contact a{border-bottom:0;color:#342D33;font-size:1.728em;margin-right:1.2em;padding-bottom:0}
@@ -33,7 +33,7 @@
 .exp h2{text-align: center}
 .exp .header{font-weight:500; margin-bottom: -10px; font-size: 20px; text-align: left}
 .exp .info{text-align:left; font-weight:300; font-size: 13px;}
-.exp .designation{text-align: left; font-weight: 300; font-size: 16px; margin-bottom: -10px;}
+.exp .designation{text-align: left; font-weight: 300; font-size: 16px;}
 .exp .awards{text-align:left; margin-bottom: -15px}
 .exp b{font-weight: bold}
 .reading-rec .reading-rec__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;-ms-flex-pack:distribute;justify-content:space-around}
