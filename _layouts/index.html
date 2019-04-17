@@ -2,46 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137915914-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-137915914-1');
-</script>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width" initial-scale="1">
-	<meta name="description" content="Hi! I'm Nick">
-	<title>Nick Chua</title>
-	<link rel="stylesheet" href="test.css">
-	<link rel="icon" href="favicon-rebel.ico">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/brands.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-</head>
+{%include header.html%}
 <body>
 	<div class="wrapper">
 		<div class="site site-home">
 			<section class="animated fadeIn">
-				<div class="nav-links">
-					<div class="wrapper--nav">
-						<div class="page-title">
-							<a href="/"><h1>Nick Chua</h1></a>
-							<!--<img src="IMG_8892.jpeg" class="animated rotateIn">-->
-						</div>
-						<div class="page-links">
-							<a href="/about" ><button class="btn-no-outline">about me</button></a>
-							<a href="/newsletter"><button class="btn-no-outline">newsletter</button></a>
-							<a href="/archive" ><button class="btn-no-outline">blog</button></a>
-							<a href="/readinglist"><button class="btn-no-outline">reading list</button></a>
-							<a href="/exp" class="contact-btn"><button class="btn-no-outline">experience  </button></a>
-						</div>
-					</div>
-					<!--<div class="divider"></div>-->
-				</div>
+				{%include navbar.html%}
 				<div class="about">
 					<div class="bio"> 
 						<p>👋 I'm a 22-year-old living in Chicago working in Private Equity at Inoca Capital Partners. I created this website because I realized that I could have meaningful conversations with my friends on a variety of topics, but social media fails to facilitate that kind of information exchange. I believe the best learning is through discourse, and I hope that this website can help connect me with others. To that end, I publish a weekly newsletter with my notes for the week on interesting news and podcasts, as well as any of my own original posts here. I would love to connect on any of or all of the above.</p>
@@ -63,6 +29,6 @@
 				</section>
 			</div>
 		</div>
-
+{%include footer.html%}
 </body>
 </html>

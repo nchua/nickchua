@@ -1,44 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137915914-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+{%include header.html%}
 
-  gtag('config', 'UA-137915914-1');
-</script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width" initial-scale="1">
-  <meta name="description" content="Hi! I'm Nick">
-  <title>Hi I'm Nick</title>
-  <link rel="stylesheet" href="test.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik" type="text/css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/brands.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 
 </head>
 <body>
   <div class="wrapper">
     <div class="site site-blog sub-page">
     <section class="animated fadeIn">
-      <div class="nav-links">
-        <div class="wrapper--nav">
-          <div class="page-title">
-            <a href="/"><h1>Nick Chua</h1></a>
-          </div>
-          <div class="page-links">
-            <a href="/about" ><button class="btn-no-outline">about me</button></a>
-            <a href="/newsletter"><button class="btn-no-outline">newsletter</button></a>
-            <a href="/archive" ><button class="btn-no-outline">blog</button></a>
-            <a href="/readinglist"><button class="btn-no-outline">reading list</button></a>
-            <a href="/exp" class="contact-btn"><button class="btn-no-outline">experience  </button></a>
-          </div>
-        </div>
-      </div>
+      {%include navbar.html%}
     </section>
     <main class="animated fadeIn">
       <header class="page-header">
@@ -101,9 +72,8 @@
           <li><b>Marvel Universe</b> - I know this isn't a specific movie or series, but I admire how so many movies have built up in one congruent universe. I think the Russo brothers did an amazing job keeping the story unique and unexpected in Infinity War and cannot wait for what they have in store for Endgame. I'm also a big fan of the Toby Macguire and Andrew Garfield versions of Spider-man. Maybe I just want to have super powers. Sue me.</li>
         </ul>
 
-
-
 </header>
 
+{%include footer.html%}
 </body>
 </html>

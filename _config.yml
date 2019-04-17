@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
 title: Nick Chua
 description: 22, Chicago 
+
+# deployment
+host: 0.0.0.0
+port: 500
