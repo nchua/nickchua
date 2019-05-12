@@ -1,27 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-{%include header.html%}
-
-
-</head>
-<body>
-  <div class="wrapper">
-    <div class="site site-blog sub-page">
-    <section class="animated fadeIn">
-      {%include navbar.html%}
-    </section>
-    <main class="animated fadeIn">
-      <header class="page-header">
-        <h2>{{ page.title}}</h2>
-        {{ content }}
-      </header>
-      <div class="simple-subscription-form">
-        <div id="mc_embed_signup">
+<div id="mc_embed_signup">
           <form action="https://gmail.us20.list-manage.com/subscribe/post?u=83709a4ce1488d13b1e0481d3&amp;id=5365ba50a1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
+              <h2 style="font-family: IowanOldSt BT">Newsletter</h2>
               <p style="font-family: IowanOldSt BT">
-                If you like content like this, I send a weekly newsletter with my notes for the past week - the news and podcasts I thought were interesting and what they might mean, plus any new posts here.
+                I try to send an email newsletter every Sunday with a new article or a recap of interesting news articles, podcasts, or books that I enjoyed that week. If you'd like to be kept up to date on these, subscribe below.
               </p>
                 <div style="font-family: IowanOldSt BT" class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                 <div class="mc-field-group">
@@ -41,9 +23,3 @@
           <div style="font-family: IowanOldSt BT" class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
           </div>
         </form>
-      </div>
-      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-
-{%include footer.html%}
-</body>
-</html>
