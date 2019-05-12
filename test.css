@@ -18,6 +18,22 @@ h1, h2, h3, li, h4, h5, h6, a, p, button, input {
 p {
 	font-family: IowanOldSt BT;
 }
+.img-container {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 40%;
+
+}
+
+.img-container-center {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.img-container-book {
+  width: 30%;
+  margin: auto;
+}
 .list--unstyled{list-style-type:none;-webkit-margin-before:0;-webkit-padding-start:0}
 .list__list-item{padding-bottom:1.33em}
 .list__list-item h2{font-size:1em;margin:.56em 0 .31em}
