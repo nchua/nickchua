@@ -54,7 +54,7 @@ p {
 .site-home .about p{padding:0 1em 1em 1em}
 .site-home .about p a{border-bottom:1px solid}
 .site-home .about .shapes .shapes--left{-webkit-animation-delay:1s;animation-delay:1s;width:30%}
-.site-home .about .shapes .shapes--right{-webkit-animation-delay:1.2s;animation-delay:1.2s;position:absolute;right:0; top: 10%; width:20%}
+.site-home .about .shapes .shapes--right{-webkit-animation-delay:1.2s;animation-delay:1.2s;position:absolute;right:0; top: 6.25%; width:35%}
 .contact{padding-top:1.728em;position:relative}
 .contact .social-links{position:absolute;left:0}
 .contact a{border-bottom:0;color:#342D33;font-size:1.728em;margin-right:1.2em;padding-bottom:0}
