@@ -30,12 +30,21 @@ p {
   margin: 0 auto;
 }
 
+.img-container-moscow {
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	width: auto;
+	max-width: 600px;
+	max-height: 600px;
+}
+
 .img-container-book {
   width: 30%;
   margin: auto;
 }
 
-.divider{
+.divider-two{
     width:7px;
     height:auto;
     display:inline-block;
