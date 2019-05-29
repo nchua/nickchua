@@ -17,6 +17,7 @@ h1, h2, h3, li, h4, h5, h6, a, p, button, input {
 
 p {
 	font-family: IowanOldSt BT;
+	margin-top: 1em
 }
 .img-container {
   padding-left: 10px;
@@ -87,6 +88,7 @@ blockquote {
 	background-color: #fff;
 }
 
+/*this part for nav bar title*/
 .topnav-centered a,h1 {
   float: none;
   position: absolute;
