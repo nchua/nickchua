@@ -73,7 +73,7 @@ a:hover{
  -->
 <nav>
     <div class="nav-wrapper white">
-      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap">Nick Chua</a>
+      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap; font-family: 'IowanOldSt BT',serif;">Nick's Holocron</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down" style="margin-left: 15px">
         <li class="nav-item"><a href="/about">start here</a></li>
@@ -167,6 +167,7 @@ a:hover{
           </div>
         </form>-->
         <h3>Past Newsletters</h3>
+        <p>06/01/19 - <a href="https://mailchi.mp/116736bd1281/nicks-newsletter-no-9" target="_blank">Nick's Newsletter #9</a></p>
         <p>05/26/19 - <a href="https://mailchi.mp/e7c8e5dad560/nicks-newsletter-no-8" target="_blank">Nick's Newsletter #8</a></p>
         <p>05/19/19 - <a href="https://mailchi.mp/94e32adfbf96/nicks-newsletter-no-7" target="_blank">Nick's Newsletter #7</a></p>
         <p>05/12/19 - <a href="https://mailchi.mp/d0713a9329a3/nicks-newsletter-no-6" target="_blank">Nick's Newsletter #6</a></p>
@@ -188,5 +189,35 @@ a:hover{
     var instances = M.Sidenav.init(elems, {});
   });
 </script>
-<script type="text/javascript" src="materialize.min.js"></script> 
+<script type="text/javascript" src="materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, {});
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.pushpin');
+        var instances = M.Pushpin.init(elems, {});
+    });
+</script>
+<script>
+    $('#toc').pushpin({
+        top: $('#toc').offset().top
+    });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, {});
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, {});
+});
+</script> 
 </body>

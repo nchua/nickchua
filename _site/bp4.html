@@ -73,7 +73,7 @@ a:hover{
  -->
 <nav>
     <div class="nav-wrapper white">
-      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap">Nick Chua</a>
+      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap; font-family: 'IowanOldSt BT',serif;">Nick's Holocron</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down" style="margin-left: 15px">
         <li class="nav-item"><a href="/about">start here</a></li>
@@ -105,6 +105,12 @@ a:hover{
 
 </head>
 <body>
+  <div class="cover-photo" style="background-image: url(../pictures/posts/bp4cover.jpg)">
+    <div style="text-align: center">
+      <h1 class="post-title" style="margin: 0; font-weight: bold">The Death of a Blog</h1>
+    </div>
+    <h3 class="post-subtitle" style="margin: 0; font-weight: bold;">May 18, 2019</h3>
+  </div>
   <div class="wrapper">
     <div class="site site-blog sub-page">
     <section class="animated fadeIn">
@@ -112,8 +118,8 @@ a:hover{
     </section>
     <main class="animated fadeIn">
       <header class="page-header">
-        <h2>The Death of a Blog</h2>
-        <p><span style="font-size: 10px">May 18th, 2019</span></p>
+<!--         <h2>The Death of a Blog</h2> -->
+        <p><span style="font-size: 150%">In a16z’s podcast <a href="https://open.spotify.com/episode/6yWfLitwZTiLzvuZu0g0fj?si=mXymmNSKS9-s_R69nfjZHA" target="_blank"><i>Innovating in Bets</i></a>, Annie Duke tells listeners how to play the odds. </span></p>
 
 <p>This piece was inspired by a16z’s podcast <em>Innovating in Bets</em> with poker player Annie Duke. In the podcast she describes how in poker it is incredibly important to be a process-oriented thinker, rather than an outcome-based one. This helps players remain objective when analyzing their play and avoid being clouded by emotional feedback.</p>
 
@@ -229,5 +235,35 @@ a:hover{
   });
 </script>
 <script type="text/javascript" src="materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, {});
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.pushpin');
+        var instances = M.Pushpin.init(elems, {});
+    });
+</script>
+<script>
+    $('#toc').pushpin({
+        top: $('#toc').offset().top
+    });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, {});
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, {});
+});
+</script>
 </body>
 </html>

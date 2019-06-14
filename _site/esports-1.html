@@ -73,7 +73,7 @@ a:hover{
  -->
 <nav>
     <div class="nav-wrapper white">
-      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap">Nick Chua</a>
+      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap; font-family: 'IowanOldSt BT',serif;">Nick's Holocron</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down" style="margin-left: 15px">
         <li class="nav-item"><a href="/about">start here</a></li>
@@ -105,6 +105,12 @@ a:hover{
 
 </head>
 <body>
+  <div class="cover-photo" style="background-image: url(../pictures/posts/e1cover.jpg)">
+    <div style="text-align: center">
+      <h1 class="post-title" style="margin: 0; font-weight: bold">An Ode to Esports</h1>
+    </div>
+    <h3 class="post-subtitle" style="margin: 0; font-weight: bold;">May 11, 2019</h3>
+  </div>
   <div class="wrapper">
     <div class="site site-blog sub-page">
     <section class="animated fadeIn">
@@ -112,10 +118,8 @@ a:hover{
     </section>
     <main class="animated fadeIn">
       <header class="page-header">
-        <h2>An Ode to Esports</h2>
-        <p><span style="font-size: 10px">March 11th, 2019</span></p>
-
-<p>I’ve believed for a long time that esports are part of the mainstream future. To me, it exists in the center of a generational change of digital natives and supporting platforms. Like with any nascent industry, it can change quickly. I would like to post my thoughts on these changes, but to do that I believe I have to lay some groundwork down first.</p>
+<!--         <h2>An Ode to Esports</h2> -->
+        <p>I’ve believed for a long time that esports are part of the mainstream future. To me, it exists in the center of a generational change of digital natives and supporting platforms. Like with any nascent industry, it can change quickly. I would like to post my thoughts on these changes, but to do that I believe I have to lay some groundwork down first.</p>
 
 <p>To that end, I have written a four part position paper. This first part will serve as an abstract for the following sections. It outlines the reasons I believe in the industry and why it can overcome the challenges that comes. I will explain the division of the following three sections at the end of the this article.</p>
 
@@ -184,5 +188,35 @@ a:hover{
   });
 </script>
 <script type="text/javascript" src="materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, {});
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.pushpin');
+        var instances = M.Pushpin.init(elems, {});
+    });
+</script>
+<script>
+    $('#toc').pushpin({
+        top: $('#toc').offset().top
+    });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, {});
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, {});
+});
+</script>
 </body>
 </html>

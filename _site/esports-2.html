@@ -73,7 +73,7 @@ a:hover{
  -->
 <nav>
     <div class="nav-wrapper white">
-      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap">Nick Chua</a>
+      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap; font-family: 'IowanOldSt BT',serif;">Nick's Holocron</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down" style="margin-left: 15px">
         <li class="nav-item"><a href="/about">start here</a></li>
@@ -105,6 +105,12 @@ a:hover{
 
 </head>
 <body>
+  <div class="cover-photo" style="background-image: url(../pictures/posts/e2cover.png)">
+    <div style="text-align: center">
+      <h1 class="post-title" style="margin: 0; font-weight: bold">The Implications of a Digital Native Generation</h1>
+    </div>
+    <h3 class="post-subtitle" style="margin: 0; font-weight: bold;">May 12, 2019</h3>
+  </div>
   <div class="wrapper">
     <div class="site site-blog sub-page">
     <section class="animated fadeIn">
@@ -112,12 +118,10 @@ a:hover{
     </section>
     <main class="animated fadeIn">
       <header class="page-header">
-        <h2>The Implications of a Digital Native Generation</h2>
-        <p><span style="font-size: 10px">May 12th, 2019</span></p>
+<!--         <h2>The Implications of a Digital Native Generation</h2> -->
+        <p>This is part two of four in my position paper on esports. To read the first part click <a href="/esports-1">here</a>.</p>
 
-<p>This is part two of four in my position paper on esports. To read the first part click <a href="/esports-1">here</a>.</p>
-
-<p>There is a great MIT study summarized in <a href="https://www.collaborativefund.com/blog/you-have-to-live-it-to-believe-it/">this article</a> that proved learning by seeing and learning by doing are two completely different things. In the study they put two kittens in a lighted box for three hours in a day, one attached a carousel with its feet touching the ground and the other attached without. The other hours were spent in a dark box.</p>
+<p>There is a great MIT study summarized in <a href="https://www.collaborativefund.com/blog/you-have-to-live-it-to-believe-it/" target="_blank">this article</a> that proved learning by seeing and learning by doing are two completely different things. In the study they put two kittens in a lighted box for three hours in a day, one attached a carousel with its feet touching the ground and the other attached without. The other hours were spent in a dark box.</p>
 
 <p><img src="/pictures/MITstudy.png" alt="" class="img-container-center" /></p>
 
@@ -165,13 +169,16 @@ a:hover{
 
 <p>One reason to use Twitch to stream over Instagram live is that Twitch pays, and it pays well. For those of you unfamiliar with streaming, people actually donate money for their question and username to be displayed across the screen. While there is a chat function, normally it’s too fast for the streamer to see all the comments or it gets lost in the shuffle of things. If you donate, you have a much higher chance of getting your question answered.</p>
 
-<p>Even if a star isn’t streaming to make money, they could give the donations they receive to charity. Ninja <a href="https://apptrigger.com/2018/04/22/fortnite-ninja-charity-stream-record/">raised $50,000 through a single stream </a> so it’s fair to say streaming for a cause can move the needle.</p>
+<p>Even if a star isn’t streaming to make money, they could give the donations they receive to charity. Ninja <a href="https://apptrigger.com/2018/04/22/fortnite-ninja-charity-stream-record/" target="_blank">raised $50,000 through a single stream </a> so it’s fair to say streaming for a cause can move the needle.</p>
+
+<p><img src="/pictures/posts/e2donation.png" alt="" class="img-container-center" />
+<em><center>League of Legends pro Sneaky gets a $10,000 donation to say hi </center></em></p>
 
 <p>For people that aren’t bonafide stars, it allows them to build a fan base that would otherwise be impossible. I don’t necessarily believe that the best players had the best personalities.</p>
 
 <p>Take Kendrick Perkins, a good but decidedly “average” NBA talent. He’s recently been featured on First Take and other sports shows and has been heralded as an amazing personality with strong analysis. If he was able to stream himself watching games while he was a professional he may have had more fans, and ultimately more sponsorships.</p>
 
-<p>These same arguments apply to video game players. The most popular and successful League of Legends player Faker streams. His first stream on Twitch broke records <a href="https://www.riftherald.com/lck/2017/2/6/14526916/faker-twitch-stream-skt">with 250 thousand concurrent viewers</a>. Fans are extremely lucky and grateful to interact with his greatness on a semi personal level.</p>
+<p>These same arguments apply to video game players. The most popular and successful League of Legends player Faker streams. His first stream on Twitch broke records <a href="https://www.riftherald.com/lck/2017/2/6/14526916/faker-twitch-stream-skt" target="_blank">with 250 thousand concurrent viewers</a>. Fans are extremely lucky and grateful to interact with his greatness on a semi personal level.</p>
 
 <p>Imaqtpie, a relatively average North American League of Legends professional player turned to steaming after retiring from pro gaming. He found his calling as an entertainer and is one of the top streamers on Twitch. He pulls in a cool $2.5 million per year from donations, sponsorships, and ads.</p>
 
@@ -232,5 +239,35 @@ a:hover{
   });
 </script>
 <script type="text/javascript" src="materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, {});
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.pushpin');
+        var instances = M.Pushpin.init(elems, {});
+    });
+</script>
+<script>
+    $('#toc').pushpin({
+        top: $('#toc').offset().top
+    });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, {});
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, {});
+});
+</script>
 </body>
 </html>

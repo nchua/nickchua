@@ -73,7 +73,7 @@ a:hover{
  -->
 <nav>
     <div class="nav-wrapper white">
-      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap">Nick Chua</a>
+      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap; font-family: 'IowanOldSt BT',serif;">Nick's Holocron</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down" style="margin-left: 15px">
         <li class="nav-item"><a href="/about">start here</a></li>
@@ -105,6 +105,12 @@ a:hover{
 
 </head>
 <body>
+  <div class="cover-photo" style="background-image: url(../pictures/posts/bp2cover.jpg)">
+    <div style="text-align: center">
+      <h1 class="post-title" style="margin: 0; font-weight: bold">The Wait for Endgame</h1>
+    </div>
+    <h3 class="post-subtitle" style="margin: 0; font-weight: bold;">April 1, 2019</h3>
+  </div>
   <div class="wrapper">
     <div class="site site-blog sub-page">
     <section class="animated fadeIn">
@@ -112,10 +118,8 @@ a:hover{
     </section>
     <main class="animated fadeIn">
       <header class="page-header">
-        <h2>The Wait for Endgame</h2>
-        <p><span style="font-size: 10px">April 1st, 2019</span></p>
-
-<p>I’m really excited for Endgame. Like, really excited. It’s the culmination of ten years of movies building up to the climax, and for once the ending is not predetermined. Which Avengers will meet their final end, and how do the new Avengers get resurrected? With that being said, no movie is perfect and I decided to write down a few of my thoughts going into the movie.</p>
+<!--         <h2>The Wait for Endgame</h2> -->
+        <p>I’m really excited for Endgame. Like, really excited. It’s the culmination of ten years of movies building up to the climax, and for once the ending is not predetermined. Which Avengers will meet their final end, and how do the new Avengers get resurrected? With that being said, no movie is perfect and I decided to write down a few of my thoughts going into the movie.</p>
 
 <h3 id="the-marvel-cinematic-universe-mcu-is-drastically-different-than-marvel-comics">The Marvel Cinematic Universe (MCU) is drastically different than Marvel Comics:</h3>
 
@@ -196,5 +200,35 @@ a:hover{
   });
 </script>
 <script type="text/javascript" src="materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, {});
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.pushpin');
+        var instances = M.Pushpin.init(elems, {});
+    });
+</script>
+<script>
+    $('#toc').pushpin({
+        top: $('#toc').offset().top
+    });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, {});
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, {});
+});
+</script>
 </body>
 </html>

@@ -73,7 +73,7 @@ a:hover{
  -->
 <nav>
     <div class="nav-wrapper white">
-      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap">Nick Chua</a>
+      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap; font-family: 'IowanOldSt BT',serif;">Nick's Holocron</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down" style="margin-left: 15px">
         <li class="nav-item"><a href="/about">start here</a></li>
@@ -105,6 +105,12 @@ a:hover{
 
 </head>
 <body>
+  <div class="cover-photo" style="background-image: url()">
+    <div style="text-align: center">
+      <h1 class="post-title" style="margin: 0; font-weight: bold">My College Advice</h1>
+    </div>
+    <h3 class="post-subtitle" style="margin: 0; font-weight: bold;">April 11, 2019</h3>
+  </div>
   <div class="wrapper">
     <div class="site site-blog sub-page">
     <section class="animated fadeIn">
@@ -112,7 +118,7 @@ a:hover{
     </section>
     <main class="animated fadeIn">
       <header class="page-header">
-        <h2>My College Advice</h2>
+<!--         <h2>My College Advice</h2> -->
         <p>College is interesting because it feels like time moves so slowly, but by the end you realize it flew by. Everyone’s college experience is unique, and can be completely changed by a single decision to join an organization or even take a certain class. This is by no means a comprehensive guide to doing well in college, but rather some tips that I would have appreciated knowing going into college.</p>
 
 <ol>
@@ -171,5 +177,35 @@ a:hover{
   });
 </script>
 <script type="text/javascript" src="materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, {});
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.pushpin');
+        var instances = M.Pushpin.init(elems, {});
+    });
+</script>
+<script>
+    $('#toc').pushpin({
+        top: $('#toc').offset().top
+    });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, {});
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, {});
+});
+</script>
 </body>
 </html>

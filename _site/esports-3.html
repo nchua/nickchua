@@ -73,7 +73,7 @@ a:hover{
  -->
 <nav>
     <div class="nav-wrapper white">
-      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap">Nick Chua</a>
+      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap; font-family: 'IowanOldSt BT',serif;">Nick's Holocron</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down" style="margin-left: 15px">
         <li class="nav-item"><a href="/about">start here</a></li>
@@ -105,6 +105,12 @@ a:hover{
 
 </head>
 <body>
+  <div class="cover-photo" style="background-image: url(../pictures/posts/e3cover.jpg)">
+    <div style="text-align: center">
+      <h1 class="post-title" style="margin: 0; font-weight: bold">Esports is Printing Money</h1>
+    </div>
+    <h3 class="post-subtitle" style="margin: 0; font-weight: bold;">May 16, 2019</h3>
+  </div>
   <div class="wrapper">
     <div class="site site-blog sub-page">
     <section class="animated fadeIn">
@@ -112,18 +118,16 @@ a:hover{
     </section>
     <main class="animated fadeIn">
       <header class="page-header">
-        <h2>Esports is Printing Money</h2>
-        <p><span style="font-size: 10px">May 16th, 2019</span></p>
-
-<p>This is part three of four in my position paper on esports. To read the first and second parts click <a href="/esports-1">here</a> and <a href="/esports-2">here</a>.</p>
-
-<p>Take a guess on what is the most valuable form of entertainment. Is it the music industry, with Ariana Grande seemingly unable to miss? Or is it the movie industry with Endgame breaking every record? It seems that everyone and their mother is talking about Game of the Thrones and its last season. So is it television?</p>
+<!--         <h2>Esports is Printing Money</h2> -->
+        <h3>Take a guess on what the is most valuable form of entertainment. Is it the music industry, with Arianna Grande breaking every record? Or is it the movie industry with Endgame smashing worldwide records? It seems like everyone was talking about Game of Thrones, is it television? </h3>
 
 <p>The simple answer is no, and it’s actually not even that close. Statistically the most popular and profitable form of entertainment is gaming. And it’s growing faster. Check out the graph below:</p>
 
 <p><img src="/pictures/gamingsize.jpg" alt="" class="img-container-center" /></p>
 
-<p>Video games make more than twice the music and movie industry combined, and the second highest category, television, is down while gaming is exploding. This might be surprising to a lot of people, whose first guess probably wasn’t video games. The biggest culprit is likely the lack of marketing dollars spent on gaming, while Avengers: Infinity War spent <a href="https://deadline.com/2018/04/avengers-infinity-war-marvel-historic-promotional-campaign-1202358646/">more than $150 million</a> on TV ads alone.</p>
+<p>Part three of my four part position paper explores the economic forces that will drive the growth of esports. To read the first and second parts click <a href="/esports-1" target="_blank">here</a> and <a href="/esports-2" target="_blank">here</a>.</p>
+
+<p>Video games make more than twice the music and movie industry combined, and the second highest category, television, is down while gaming is exploding. This might be surprising to a lot of people, whose first guess probably wasn’t video games. The biggest culprit is likely the lack of marketing dollars spent on gaming, while Avengers: Infinity War spent <a href="https://deadline.com/2018/04/avengers-infinity-war-marvel-historic-promotional-campaign-1202358646/" target="_blank">more than $150 million</a> on TV ads alone.</p>
 
 <p>When we think of the most popular type of entertainment, we probably think of what segment of entertainment spends the most on marketing. After all, our brains naturally most easily remember something we’ve seen or experienced recently. So if video games are such a big deal, why don’t we see more marketing related to gaming?</p>
 
@@ -221,7 +225,11 @@ a:hover{
 
 <p>The next and final section examines the challenges I think the esports industry faces, and what the future of esports will look like.</p>
 
-<center><a href="/esports-2"><button class="btn-no-outline">&laquo; Part 2</button></a></center>
+<div class="divider"></div>
+<p><br /></p>
+<center><a href="/esports-2"><button class="btn-no-outline">&laquo; Part 2</button></a><div class="divider-two"></div>
+	<a href="/esports-4"><button class="btn-no-outline">Part 4 &raquo;</button></a>
+</center>
 
       </header>
       <div class="simple-subscription-form">
@@ -262,5 +270,35 @@ a:hover{
   });
 </script>
 <script type="text/javascript" src="materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, {});
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.pushpin');
+        var instances = M.Pushpin.init(elems, {});
+    });
+</script>
+<script>
+    $('#toc').pushpin({
+        top: $('#toc').offset().top
+    });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, {});
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, {});
+});
+</script>
 </body>
 </html>

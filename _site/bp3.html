@@ -73,7 +73,7 @@ a:hover{
  -->
 <nav>
     <div class="nav-wrapper white">
-      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap">Nick Chua</a>
+      <a href="/" class="brand-logo center" style="font-size: 40px; white-space: nowrap; font-family: 'IowanOldSt BT',serif;">Nick's Holocron</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down" style="margin-left: 15px">
         <li class="nav-item"><a href="/about">start here</a></li>
@@ -105,6 +105,12 @@ a:hover{
 
 </head>
 <body>
+  <div class="cover-photo" style="background-image: url(../pictures/posts/bp3cover.jpg)">
+    <div style="text-align: center">
+      <h1 class="post-title" style="margin: 0; font-weight: bold">Apple as a Portfolio Company</h1>
+    </div>
+    <h3 class="post-subtitle" style="margin: 0; font-weight: bold;">April 7, 2019</h3>
+  </div>
   <div class="wrapper">
     <div class="site site-blog sub-page">
     <section class="animated fadeIn">
@@ -112,10 +118,8 @@ a:hover{
     </section>
     <main class="animated fadeIn">
       <header class="page-header">
-        <h2>Apple as a Portfolio Company</h2>
-        <p><span style="font-size: 10px">April 7th, 2019</span></p>
-
-<p>Much has been made of Apple’s new services. To give a brief summary Apple has four new products:</p>
+<!--         <h2>Apple as a Portfolio Company</h2> -->
+        <p>Much has been made of Apple’s new services. To give a brief summary Apple has four new products:</p>
 
 <ol>
   <li><strong>Apple News Plus</strong> - a manually curated aggregated news experience that does not share your data with advertisers</li>
@@ -132,6 +136,8 @@ a:hover{
 
 <p>In my time at Inoca Capital, I’ve looked at over 2000 deals and worked intimiately with our two portfolio companies. None of them were as fortunate or as successful as Apple in creating a captivated userbase, but they faced a similar problem in figuring out how to get clients to pay more than they signed up for. Apple’s pivot to services screams private equity, I’ll evaluate the strategy below.</p>
 
+<div class="divider"></div>
+
 <h3 id="how-to-boost-returns-to-shareholders">How to Boost Returns to Shareholders</h3>
 
 <p>This is an oversimplification of the highest order, but barring multiple expansion (which means you assume you get the same exit multiple as entry) there are two key ways of boosting returns: earn more revenue, or increasing operational efficiency. While there is room for creativity in the second role, it is often in the first where founder CEOs get lost. When there’s an abundance of potential strategies, picking the right one and executing like crazy is extremely difficult for even the best CEOs (see <a href="https://www.thebalancesmb.com/steve-jobs-and-how-embracing-failure-saved-apple-1200640" target="_blank">Steve Jobs initially failing at Apple</a>).</p>
@@ -144,6 +150,8 @@ a:hover{
 </ol>
 
 <p>The reason the second lever is far more desirable than the first is it’s infinitely easier to get a consumer to agree to spend the second dollar than the first, and by increasing their dependence it increases the ‘stickiness’ of your brand. Apple has done a remarkable job of this with their products. Homepods can only search within Apple music, AirDrop only works between Apple products, and even iMessages shuns Android users by making conversations take a different color. Apple music was the first and most successful move Apple has taken in the services space. And after passing Spotify in the United States, it’s <a href="https://www.wsj.com/articles/apple-music-overtakes-spotify-in-u-s-subscribers-11554475924" target="_blank">been very successful</a>. I believe this proof of concept allowed Apple to continue to expand into other services.</p>
+
+<div class="divider"></div>
 
 <h3 id="why-services-are-essential">Why Services are Essential</h3>
 
@@ -202,5 +210,35 @@ a:hover{
   });
 </script>
 <script type="text/javascript" src="materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, {});
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.pushpin');
+        var instances = M.Pushpin.init(elems, {});
+    });
+</script>
+<script>
+    $('#toc').pushpin({
+        top: $('#toc').offset().top
+    });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, {});
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, {});
+});
+</script>
 </body>
 </html>
