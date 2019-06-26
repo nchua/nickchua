@@ -1,5 +1,5 @@
 ---
 layout: readinglist
-title: reading List
+title: Reading List
 permalink: /readinglist
 ---
