@@ -1,5 +1,5 @@
 ---
 layout: newsletter
-title: Newsletter
+title: newsletter
 permalink: /newsletter
 ---
