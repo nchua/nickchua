@@ -77,6 +77,18 @@ p {
 	margin-left: auto;
 	width: 50%;
 }
+
+.img-container-center-two-rotated {
+	display: block;
+	width: 50%;
+	transform: rotate(90deg);
+	padding: 1em;
+	/* -webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg); */
+}
 .img-container-moscow {
 	display: block;
 	margin: 0 auto;
