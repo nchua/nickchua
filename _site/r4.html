@@ -10,6 +10,12 @@
 
   gtag('config', 'UA-137915914-1');
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
+</script>
       <!--Import Google Icon Font-->
       <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
       <!--Import materialize.css-->
@@ -310,5 +316,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Tooltip.init(elems, {});
 });
 </script>
+
 </body>
 </html>

@@ -10,6 +10,12 @@
 
   gtag('config', 'UA-137915914-1');
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
+</script>
       <!--Import Google Icon Font-->
       <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
       <!--Import materialize.css-->
@@ -147,29 +153,29 @@ a:hover{
 </div>
 
 <div class="col s4 l4">
-	<div class="card small">
-		<div class="card-image waves-effect waves-block waves-light">
-			<img class="activator" src="pictures/books/zero.png">
-		</div>
-	<div class="card-content">
-		<p>
-			Peter Thiel's book on startups and how to build the future
-		</p>
-	</div>
-	<div class="card-action">
-		<span class="card-action activator" style="color: rgb(128,0,0); cursor:pointer;">
-			READ MORE
-		</span>
-	</div>
-	<div class="card-reveal">
-		<span class="card-title grey-text text-darken-4">Quick Summary
-			<i class="material-icons right">close</i>
-		</span>
-		<p>
-			Full notes soon to come, this is an amazing book and I'm only halfway done.
-		</p>
-	</div>
-</div>
+    <div class="card small">
+    	<div class="card-image waves-effect waves-block waves-light">
+    		<img class="activator" src="pictures/books/stealingfire.png">
+    	</div>
+    <div class="card-content">
+    	<p>
+    		Steven and Jamie do a deep dive of flow in Silicon Valley.
+    	</p>
+    </div>
+    <div class="card-action">
+    	<span class="card-action activator" style="color: rgb(128,0,0); cursor:pointer;">
+    		READ MORE
+    	</span>
+    </div>
+    <div class="card-reveal">
+    	<span class="card-title grey-text text-darken-4">Quick Summary
+    		<i class="material-icons right">close</i>
+    	</span>
+    	<p>
+    		More to come - just started the book this week.
+    	</p>
+    </div>
+    </div>
 </div>
 
 <div class="col s4 l4">
@@ -202,12 +208,100 @@ a:hover{
 	</div> -->
 
 	</div>
-<!-- End of In Progress Books-->
-
+<!-- End of In Progress Books
+<ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul> -->
 	<h2>
 		<b>Completed:</b>
 	</h2>
-	
+
+<!-- Row 2-->
+	<div class="row">
+
+	<div class="col s12 l4">
+		<div class="card small">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="pictures/books/atomichabits.png">
+			</div>
+			<div class="card-content">
+			<p>
+				How 1% improvements can change your life
+			</p>
+			</div>
+			<div class="card-action">
+				<span class="card-action activator" style="color: rgb(128,0,0); cursor:pointer;">
+					READ MORE
+				</span>
+			</div>
+			<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Quick Summary
+					<i class="material-icons right">close</i>
+				</span>
+				<p>
+					James Clear breaks down changing habits into four easy-to-follow steps: make it obvious, make it attractive, make it easy, and make it satisfying. This is one of those books I had to read more than once because it was so helpful. The ideas are simple, the execution is easy, but put together it's a powerful manual I'd recommend to anyone.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col s12 l4">
+		<div class="card small">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="pictures/books/zero.png">
+			</div>
+		<div class="card-content">
+			<p>
+				Peter Thiel's views on startups, companies, and monopolies.
+			</p>
+		</div>
+		<div class="card-action">
+			<a href="/r3" target="_blank">Review</a>
+		</div>
+	</div>
+	</div>
+
+	<div class="col s12 l4">
+		<div class="card small">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="pictures/books/a-game.png">
+			</div>
+			<div class="card-content">
+			<p>
+				Bo Eason breaks down why you deserve to be the best in the world.
+			</p>
+			</div>
+			<div class="card-action">
+				<span class="card-action activator" style="color: rgb(128,0,0); cursor:pointer;">
+					READ MORE
+				</span>
+			</div>
+			<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Quick Summary
+					<i class="material-icons right">close</i>
+				</span>
+				<p>
+					This was honestly one of the most inspiring books I've ever read. Bo Eason not only conquered being a professional athlete despite lacking genetic advantages, but he also became a nationally known playwright and actor. He accomplished this with a relentless work ethic and a belief he could be the best. These are skills that anyone can learn, and he does a great job inspiring the reader.
+				</p>
+			</div>
+		</div>
+	</div>
+		
+	</div>
+	<!-- Row 2 done -->
+
+
 	<!--Beginning of Row 1 Completed-->
 	<div class="row">
 
@@ -230,11 +324,11 @@ a:hover{
     <div class="col s12 l4">
       <div class="card small">
     	<div class="card-image waves-effect waves-block waves-light">
-    		<img class="activator" src="pictures/books/revan.png">
+    		<img class="activator" src="pictures/books/hurtme.png">
     	</div>
         <div class="card-content">
           <p>
-          	An amazing Star Wars story on one of the most interesting characters ever, Revan.
+          	David Goggin's story of mental discipline and sacrifice.
           </p>
         </div>
     	<div class="card-action">
@@ -247,7 +341,7 @@ a:hover{
     			<i class="material-icons right">close</i>
     		</span>
     		<p>
-    			As a big Star Wars fan, I really wish they made movies about the Old Republic. To me, the battle between the Jedi and the Sith were the most interesting parts of the universe, and the Old Republic had plenty of both. This book tells the story of one of the most powerful Jedi in history, Revan.
+    			David Goggins is a scary man. He is the only member of the U.S. Armed forces to complete SEAL training, U.S. Army Ranger School, and Air Force Tactical Air Controller training. He also set the world record for pull-ups at 4030 in 17 hours. But he wasn't always like that. He was obese and worked as a janitor until he slowly built the mental discipline that led him to his later success. This book is beyond inspiring.
     		</p>
     	</div>
       </div>
@@ -270,8 +364,109 @@ a:hover{
 	  <!--This div ends row one of books-->
 	</div>
 
+<!-- Row 5-->
+
+<div class="row">
+
+	<div class="col s12 l4">
+		<div class="card small">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="pictures/books/darthbane.png">
+			</div>
+			<div class="card-content">
+			<p>
+				Drew Karpyshyn's masterpiece trilogy on one of the most important Sith Lords ever.
+			</p>
+			</div>
+			<div class="card-action">
+				<span class="card-action activator" style="color: rgb(128,0,0); cursor:pointer;">
+					READ MORE
+				</span>
+			</div>
+			<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Quick Summary
+					<i class="material-icons right">close</i>
+				</span>
+				<p>
+					Darth Bane is the reason why there can only ever be two Sith at one time, a theme that we know is extremely important from the movies (Palpatine and Darth Maul, Palpatine and Darth Tyrannus, Palpatine and Darth Vader, etc.). These books take place when there were thousands of Sith and Jedi, which would be an amazing template for a movie. Please Disney. 
+				</p>
+			</div>
+		</div>
+	</div>
+	
+    <div class="col s12 l4">
+		<div class="card small">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="pictures/books/burningwhite.png">
+			</div>
+			<div class="card-content">
+			<p>
+				Brent Week's last book in the Lightbringer series.
+			</p>
+			</div>
+			<div class="card-action">
+				<span class="card-action activator" style="color: rgb(128,0,0); cursor:pointer;">
+					READ MORE
+				</span>
+			</div>
+			<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Quick Summary
+					<i class="material-icons right">close</i>
+				</span>
+				<p>
+					Brent Weeks is one of my favorite fantasy authors of all time. He also wrote the Night Angel Trilogy (my second favorite fantasy series after the Kingkiller Chronicles). If you're a fan of fantasy, I would suggest checking out all Brent Weeks books as they always deliver.
+				</p>
+			</div>
+		</div>
+	</div>
+
+    <div class="col s12 l4">
+		<div class="card small">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="pictures/books/revan.png">
+			</div>
+			<div class="card-content">
+			<p>
+				An amazing Star Wars story on one of the most interesting characters ever, Revan.
+			</p>
+			</div>
+			<div class="card-action">
+				<span class="card-action activator" style="color: rgb(128,0,0); cursor:pointer;">
+					READ MORE
+				</span>
+			</div>
+			<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Quick Summary
+					<i class="material-icons right">close</i>
+				</span>
+				<p>
+					As a big Star Wars fan, I really wish they made movies about the Old Republic. To me, the battle between the Jedi and the Sith were the most interesting parts of the universe, and the Old Republic had plenty of both. This book tells the story of one of the most powerful Jedi in history, Revan.
+				</p>
+			</div>
+		</div>
+	</div>
+		
+	</div>
+
 <!--Beginning of Row 2 Books-->
-	<div class="row">
+<div class="row">
+
+	<div class="col s12 l4">
+			<div class="card small">
+				<div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="pictures/books/whatyoudo.png">
+				</div>
+			<div class="card-content">
+				<p>
+					Ben Horowitz's examines corporate culture in a new way.
+				</p>
+			</div>
+			<div class="card-action">
+				<a href="/r4" target="_blank">Review</a>
+			</div>
+		</div>
+		</div>
+
 			<!-- Book 1-->
 			<div class="col s12 l4">
 				<div class="card small">
@@ -332,7 +527,7 @@ a:hover{
 		  <!-- <div class="col l4 hide-on-small-and-down"></div> -->
 	
 		  <!--Book 3-->
-		  <div class="col l4 hide-on-small-and-down"></div>
+		  <!-- <div class="col l4 hide-on-small-and-down"></div> -->
 	
 
  	</div>
@@ -383,6 +578,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.tooltipped');
     var instances = M.Tooltip.init(elems, {});
 });
-</script> 
+</script>
+ 
 </body>
 <script type="text/javascript" src="materialize.min.js"></script>

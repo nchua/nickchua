@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+$success: rgb(199,221,219);
+$warning: rgb(255,242,219);
+$info:rgb(242, 242, 252);
+$footer: rgb(124, 124, 124);
+
+@import "~bulma/bulma.sass";
+
+.footer-link {
+    color: $footer;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.tile-link:hover {
+    background-color: rgb(234, 234, 252);
+}
+
+.text-link {
+    color: black;
+}
