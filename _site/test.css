@@ -19,6 +19,10 @@ p {
 	font-family: IowanOldSt BT;
 	margin-top: 1em
 }
+p.thick {
+	font-weight: bold;
+
+}
 .img-container {
   padding-left: 10px;
   padding-bottom: 10px;
