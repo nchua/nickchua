@@ -15,6 +15,8 @@ This has been a list that I’ve wanted to create for a while. Basically, I want
 
 [Wrist-attached keyboard:](/rfc1){:target="_blank"} A flexible, light-weight keyboard attached to each wrist so you don't need to look at your phone while walking, or type with just your thumbs while sitting. 
 
+Cooking App: Enter all the ingredients you have in your house, and it gives you potential recipes to make. Great for using up leftover ingredients and allows the user to try new recipes. Bonus points if you're able to rank each recipe and it learns your preferences over time. How to make it social - people can add their own recipes to the app, get ranked based on how much other people like the recipes, and earn bonus points for quality of recipe (if you added pictures etc).
+
 
 ### Unlikely:
 
