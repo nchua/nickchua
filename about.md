@@ -8,7 +8,7 @@ permalink: /about
 
 👋 I'm a 29-year-old living the Bay Area and I currently work in RevOps at Brex. This website hasn't been updated in ~6 years, but serves as a historical reference on my thoughts about tech and finance. Hopefully I'll have more to share in the future, but feel free to check out my old [weekly newsletter](/newsletter)  if you think that could be interesting. 
 
-One small edit - feel vindicated on my thoughts on Peloton which were widely mocked after the article came out, but should have put my money where my mouths was.  
+One small edit - I feel slightly vindicated on my thoughts on Peloton which were widely mocked after the article came out, but should have put my money where my mouth was.  
 
 In my previous life I played varsity tennis at the University of Chicago - you can find my record [here](https://athletics.uchicago.edu/sports/mten/2017-18/bios/chua_nicolas_49g3?view=bio). 
 
