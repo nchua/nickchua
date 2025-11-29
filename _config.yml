@@ -1,6 +1,13 @@
-theme: jekyll-theme-minimal
 title: Nick Chua
 description: 22, Chicago 
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - vendor
+  - tmp
 
 # deployment
 host: 0.0.0.0
