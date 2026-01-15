@@ -1,0 +1,15 @@
+{
+  "name": "nicks-records",
+  "version": "1.0.0",
+  "description": "Nick Chua's personal website - a vinyl record shop themed blog",
+  "scripts": {
+    "start": "npx serve .",
+    "preview": "npx serve . -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nchua/nickchua.git"
+  },
+  "author": "Nick Chua",
+  "license": "MIT"
+}
