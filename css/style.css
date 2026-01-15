@@ -55,9 +55,9 @@ body::before {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
     position: relative;
     z-index: 1;
 }
@@ -460,6 +460,12 @@ header {
     .crates-grid {
         grid-template-columns: repeat(2, 1fr);
         align-items: stretch;
+    }
+}
+
+@media (min-width: 900px) {
+    .crates-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
