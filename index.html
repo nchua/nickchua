@@ -4,241 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nick Chua</title>
-    <meta name="description" content="Nick Chua — RevOps at Brex, Bay Area. Writing on tech, esports, and culture.">
+    <meta name="description" content="Nick Chua — RevOps at Brex, Bay Area. Essays on tech, esports, and culture.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script>(function(){if(window.__nctheme)return;window.__nctheme=1;var d=document.documentElement;if(!d.hasAttribute('data-theme')){var t;try{t=localStorage.getItem('theme');}catch(e){}if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}d.setAttribute('data-theme',t);}function s(){var p=String(d.getAttribute('data-theme')==='dark');var els=document.querySelectorAll('[data-theme-toggle]');for(var i=0;i<els.length;i++){els[i].setAttribute('aria-pressed',p);}}document.addEventListener('DOMContentLoaded',s);document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-theme-toggle]');if(!b)return;var n=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e2){}s();});})();</script>
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-top">
         <div class="container">
-            <div class="site-header-inner">
+            <div class="site-top-inner">
                 <a href="/" class="wordmark">Nick Chua</a>
-                <nav class="site-nav">
-                    <a href="#writing">Writing</a>
-                    <a href="mailto:nick@nickchua.me">Contact</a>
-                </nav>
+                <a href="mailto:nick@nickchua.me" class="top-link">Contact</a>
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light and dark theme"></button>
             </div>
         </div>
     </header>
 
     <main>
         <div class="container">
-            <section class="hero">
-                <h1 class="hero-name">Nick Chua</h1>
-                <p class="hero-meta">RevOps at Brex &middot; Bay Area &middot; UChicago</p>
-                <p class="hero-bio">I work in RevOps at Brex and build side projects on nights and weekends. I write about tech, esports, and whatever else I can't stop thinking about &mdash; sci-fi included, and yes, I will defend the Star Wars prequels.</p>
+            <section class="statement">
+                <h1>Essays on tech, esports, and whatever else I <em>can&rsquo;t stop thinking about</em><span class="stop">.</span></h1>
+                <p class="meta"><span>RevOps at Brex</span><span>Bay Area</span><span>UChicago</span></p>
             </section>
 
-            <section id="writing" class="writing">
+            <section id="writing" class="writing" aria-label="Writing index">
                 <span id="stacks"></span>
-                <div class="writing-header">
-                    <h2 class="writing-label">Writing</h2>
-                    <span class="writing-count">20 essays &middot; 2019</span>
+                <div class="index-head">
+                    <h2 class="micro">Writing</h2>
+                    <p class="micro">20 essays &middot; 2019</p>
                 </div>
-                <ul class="writing-list">
-                    <li class="entry">
-                        <a href="articles/end-of-skywalkers.html">
-                            <span class="entry-date">Dec 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">The End of The Skywalkers</span>
-                                <span class="entry-desc">Examining unresolved plot threads and continuity issues heading into the final Skywalker saga installment.</span>
-                            </span>
-                            <span class="entry-tag">Culture</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/tale-of-two-users.html">
-                            <span class="entry-date">Nov 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">A Tale of Two Users</span>
-                                <span class="entry-desc">How removing Instagram's public like counter helps personal users but harms influencers.</span>
-                            </span>
-                            <span class="entry-tag">Tech</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/bear-case-peloton.html">
-                            <span class="entry-date">Sep 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">The Bear Case for Peloton</span>
-                                <span class="entry-desc">Why Peloton is a hardware company masquerading as tech, and what that means for its future.</span>
-                            </span>
-                            <span class="entry-tag">Finance</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/gaming-network.html">
-                            <span class="entry-date">Aug 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">A Gaming Network</span>
-                                <span class="entry-desc">Analyzing Andreessen Horowitz's $16.5M investment in Singularity6's vision for social gaming.</span>
-                            </span>
-                            <span class="entry-tag">Esports</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/pmf-facebook-newsfeed.html">
-                            <span class="entry-date">Aug 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">PMF, Facebook Newsfeed, and Me</span>
-                                <span class="entry-desc">How gamification and public like counts killed the joy of social media posting.</span>
-                            </span>
-                            <span class="entry-tag">Tech</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/economist-competition.html">
-                            <span class="entry-date">Aug 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">Economist Open Future Competition</span>
-                                <span class="entry-desc">Why technology companies must combat climate change disinformation.</span>
-                            </span>
-                            <span class="entry-tag">Tech</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/ramen-review-japan.html">
-                            <span class="entry-date">Jul 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">Ramen Review - Japan</span>
-                                <span class="entry-desc">Rankings and reviews of seven ramen restaurants visited during a trip to Japan.</span>
-                            </span>
-                            <span class="entry-tag">Food</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/esports-competitive-advantage.html">
-                            <span class="entry-date">Jul 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">Esports Competitive Advantage</span>
-                                <span class="entry-desc">How esports' digital-native nature enables streaming innovations traditional sports cannot replicate.</span>
-                            </span>
-                            <span class="entry-tag">Esports</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/learning-from-coach-k.html">
-                            <span class="entry-date">Jun 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">Learning From Coach K</span>
-                                <span class="entry-desc">Leadership lessons from legendary Duke Basketball coach Mike Krzyzewski on team culture and winning.</span>
-                            </span>
-                            <span class="entry-tag">Leadership</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/venture-capital-esports.html">
-                            <span class="entry-date">Jun 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">Venture Capital and Esports</span>
-                                <span class="entry-desc">Why VCs need to take a serious look at esports, or risk missing a once-in-a-generation opportunity.</span>
-                            </span>
-                            <span class="entry-tag">Esports</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/death-of-america.html">
-                            <span class="entry-date">Jun 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">The Death of America</span>
-                                <span class="entry-desc">Far from being the main cause of the problem, Trump's presidency is indicative of a nation-threatening division.</span>
-                            </span>
-                            <span class="entry-tag">Politics</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/death-of-a-blog.html">
-                            <span class="entry-date">May 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">The Death of a Blog</span>
-                                <span class="entry-desc">Applying Annie Duke's pre-mortem technique to examine potential failures of this blog.</span>
-                            </span>
-                            <span class="entry-tag">Writing</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/esports-infinity.html">
-                            <span class="entry-date">May 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">To Infinity And ?</span>
-                                <span class="entry-desc">Part 4: Examining six key components shaping esports' future&mdash;the industry will consolidate around major brands.</span>
-                            </span>
-                            <span class="entry-tag">Series</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/esports-printing-money.html">
-                            <span class="entry-date">May 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">Esports is Printing Money</span>
-                                <span class="entry-desc">Part 3: How stabilized player salaries and league franchising have attracted major sponsors and investors.</span>
-                            </span>
-                            <span class="entry-tag">Series</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/esports-digital-natives.html">
-                            <span class="entry-date">May 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">Digital Native Generation</span>
-                                <span class="entry-desc">Part 2: How growing up with internet access has fundamentally changed emotional connections to online events.</span>
-                            </span>
-                            <span class="entry-tag">Series</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/ode-to-esports.html">
-                            <span class="entry-date">May 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">An Ode to Esports</span>
-                                <span class="entry-desc">Part 1: A four-part position paper on why esports represent the mainstream future of competition.</span>
-                            </span>
-                            <span class="entry-tag">Series</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/college-advice.html">
-                            <span class="entry-date">Apr 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">My College Advice</span>
-                                <span class="entry-desc">Practical tips for college success: join organizations, attend class, utilize office hours, and balance academics.</span>
-                            </span>
-                            <span class="entry-tag">Life</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/apple-portfolio-company.html">
-                            <span class="entry-date">Apr 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">Apple as a Portfolio Company</span>
-                                <span class="entry-desc">How Apple's shift toward services mirrors private equity growth strategies.</span>
-                            </span>
-                            <span class="entry-tag">Finance</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/wait-for-endgame.html">
-                            <span class="entry-date">Apr 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">The Wait for Endgame</span>
-                                <span class="entry-desc">Pre-release speculation on Avengers: Endgame and critiquing the MCU's power scaling.</span>
-                            </span>
-                            <span class="entry-tag">Culture</span>
-                        </a>
-                    </li>
-                    <li class="entry">
-                        <a href="articles/tesla-future-locomotion.html">
-                            <span class="entry-date">Mar 2019</span>
-                            <span class="entry-text">
-                                <span class="entry-title">Tesla and the Future of Locomotion</span>
-                                <span class="entry-desc">Analyzing Tesla's competitive advantages in software, data, and manufacturing scale.</span>
-                            </span>
-                            <span class="entry-tag">Tech</span>
-                        </a>
-                    </li>
+                <hr class="rule rule--drift">
+                <ul class="entries">
+                    <li class="entry"><a href="articles/end-of-skywalkers.html"><span class="e-no">001</span><span class="e-meta-row"><span class="e-date">Dec 2019</span><span class="e-tag">Culture</span></span><span class="e-title">The End of The Skywalkers</span></a></li>
+                    <li class="entry"><a href="articles/tale-of-two-users.html"><span class="e-no">002</span><span class="e-meta-row"><span class="e-date">Nov 2019</span><span class="e-tag">Tech</span></span><span class="e-title">A Tale of Two Users</span></a></li>
+                    <li class="entry"><a href="articles/bear-case-peloton.html"><span class="e-no">003</span><span class="e-meta-row"><span class="e-date">Sep 2019</span><span class="e-tag">Finance</span></span><span class="e-title">The Bear Case for Peloton</span></a></li>
+                    <li class="entry"><a href="articles/gaming-network.html"><span class="e-no">004</span><span class="e-meta-row"><span class="e-date">Aug 2019</span><span class="e-tag">Esports</span></span><span class="e-title">A Gaming Network</span></a></li>
+                    <li class="entry"><a href="articles/pmf-facebook-newsfeed.html"><span class="e-no">005</span><span class="e-meta-row"><span class="e-date">Aug 2019</span><span class="e-tag">Tech</span></span><span class="e-title">PMF, Facebook Newsfeed, and Me</span></a></li>
+                    <li class="entry"><a href="articles/economist-competition.html"><span class="e-no">006</span><span class="e-meta-row"><span class="e-date">Aug 2019</span><span class="e-tag">Tech</span></span><span class="e-title">Economist Open Future Competition</span></a></li>
+                    <li class="entry"><a href="articles/ramen-review-japan.html"><span class="e-no">007</span><span class="e-meta-row"><span class="e-date">Jul 2019</span><span class="e-tag">Food</span></span><span class="e-title">Ramen Review &mdash; Japan</span></a></li>
+                    <li class="entry"><a href="articles/esports-competitive-advantage.html"><span class="e-no">008</span><span class="e-meta-row"><span class="e-date">Jul 2019</span><span class="e-tag">Esports</span></span><span class="e-title">Esports Competitive Advantage</span></a></li>
+                    <li class="entry"><a href="articles/learning-from-coach-k.html"><span class="e-no">009</span><span class="e-meta-row"><span class="e-date">Jun 2019</span><span class="e-tag">Leadership</span></span><span class="e-title">Learning From Coach K</span></a></li>
+                    <li class="entry"><a href="articles/venture-capital-esports.html"><span class="e-no">010</span><span class="e-meta-row"><span class="e-date">Jun 2019</span><span class="e-tag">Esports</span></span><span class="e-title">Venture Capital and Esports</span></a></li>
+                    <li class="entry"><a href="articles/death-of-america.html"><span class="e-no">011</span><span class="e-meta-row"><span class="e-date">Jun 2019</span><span class="e-tag">Politics</span></span><span class="e-title">The Death of America</span></a></li>
+                    <li class="entry"><a href="articles/death-of-a-blog.html"><span class="e-no">012</span><span class="e-meta-row"><span class="e-date">May 2019</span><span class="e-tag">Writing</span></span><span class="e-title">The Death of a Blog</span></a></li>
+                    <li class="entry"><a href="articles/esports-infinity.html"><span class="e-no">013</span><span class="e-meta-row"><span class="e-date">May 2019</span><span class="e-tag">Series</span></span><span class="e-title">To Infinity And ?</span></a></li>
+                    <li class="entry"><a href="articles/esports-printing-money.html"><span class="e-no">014</span><span class="e-meta-row"><span class="e-date">May 2019</span><span class="e-tag">Series</span></span><span class="e-title">Esports is Printing Money</span></a></li>
+                    <li class="entry"><a href="articles/esports-digital-natives.html"><span class="e-no">015</span><span class="e-meta-row"><span class="e-date">May 2019</span><span class="e-tag">Series</span></span><span class="e-title">Digital Native Generation</span></a></li>
+                    <li class="entry"><a href="articles/ode-to-esports.html"><span class="e-no">016</span><span class="e-meta-row"><span class="e-date">May 2019</span><span class="e-tag">Series</span></span><span class="e-title">An Ode to Esports</span></a></li>
+                    <li class="entry"><a href="articles/college-advice.html"><span class="e-no">017</span><span class="e-meta-row"><span class="e-date">Apr 2019</span><span class="e-tag">Life</span></span><span class="e-title">My College Advice</span></a></li>
+                    <li class="entry"><a href="articles/apple-portfolio-company.html"><span class="e-no">018</span><span class="e-meta-row"><span class="e-date">Apr 2019</span><span class="e-tag">Finance</span></span><span class="e-title">Apple as a Portfolio Company</span></a></li>
+                    <li class="entry"><a href="articles/wait-for-endgame.html"><span class="e-no">019</span><span class="e-meta-row"><span class="e-date">Apr 2019</span><span class="e-tag">Culture</span></span><span class="e-title">The Wait for Endgame</span></a></li>
+                    <li class="entry"><a href="articles/tesla-future-locomotion.html"><span class="e-no">020</span><span class="e-meta-row"><span class="e-date">Mar 2019</span><span class="e-tag">Tech</span></span><span class="e-title">Tesla and the Future of Locomotion</span></a></li>
                 </ul>
             </section>
         </div>
@@ -246,14 +65,15 @@
 
     <footer>
         <div class="container">
+            <hr class="rule rule--drift">
             <div class="footer-content">
                 <div class="footer-links">
                     <a href="https://twitter.com/nickchua5" target="_blank" rel="noopener">Twitter</a>
                     <a href="https://linkedin.com/in/nickchua" target="_blank" rel="noopener">LinkedIn</a>
                     <a href="https://instagram.com/nickchewie" target="_blank" rel="noopener">Instagram</a>
-                    <a href="mailto:nick@nickchua.me">nick@nickchua.me</a>
+                    <a href="mailto:nick@nickchua.me">Email</a>
                 </div>
-                <p class="footer-copy">&copy; 2026 Nick Chua</p>
+                <p class="footer-copy">Set in Archivo &amp; Newsreader &middot; no line on this page is perfectly straight &middot; &copy; 2026</p>
             </div>
         </div>
     </footer>

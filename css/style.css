@@ -1,31 +1,28 @@
 /* ==========================================================================
-   nickchua.me — quiet minimal identity
-   Warm gallery light, hairline structure, restrained monumental type.
+   nickchua.me — two rooms, one page
+   Light: warm gallery paper, charcoal ink, olive accent.
+   Dark: a reading lamp over a mahogany desk, cream ink, gold accent.
+   The lamp toggle remembers; first visit follows the OS.
+   No line on this page is perfectly straight.
    ========================================================================== */
 
 :root {
-    /* Canvas */
+    color-scheme: light;
+
     --canvas: #F4F2ED;
-    --canvas-deep: #ECE7DC;
-    --canvas-tint: #EFEBE2;
-
-    /* Ink */
+    --tint: #EFEBE2;
     --ink: #1C1B19;
-    --ink-soft: #57534A;
-    --ink-faint: #8E887B;
-
-    /* Structure */
+    --ink-soft: #555148;
+    --ink-faint: #7D7666;
     --hairline: #DBD5C8;
-
-    /* Accent */
     --accent: #6B6A52;
-    --haze: #E4D9C3;
 
-    /* Type */
+    /* one period of a sine, C1-continuous at the seam — tiles clean */
+    --rule: url('data:image/svg+xml;utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="600" height="5" viewBox="0 0 600 5"%3E%3Cpath d="M0 2.5 C100 1.1 200 1.1 300 2.5 S500 3.9 600 2.5" fill="none" stroke="%23DBD5C8" stroke-width="1"/%3E%3C/svg%3E');
+
     --font-display: 'Archivo', 'Helvetica Neue', sans-serif;
     --font-body: 'Newsreader', Georgia, serif;
 
-    /* Spacing */
     --s1: 0.25rem;
     --s2: 0.5rem;
     --s3: 1rem;
@@ -33,10 +30,23 @@
     --s5: 2.5rem;
     --s6: 4rem;
     --s7: 6rem;
-    --s8: 9rem;
 
-    --container: 880px;
+    --container: 820px;
     --container-article: 680px;
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+
+    --canvas: #220E08;
+    --tint: rgba(255, 196, 126, 0.06);
+    --ink: #F1E5CF;
+    --ink-soft: #D0B898;
+    --ink-faint: #A98A67;
+    --hairline: rgba(241, 229, 207, 0.13);
+    --accent: #DEA75C;
+
+    --rule: url('data:image/svg+xml;utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="600" height="5" viewBox="0 0 600 5"%3E%3Cpath d="M0 2.5 C100 1.1 200 1.1 300 2.5 S500 3.9 600 2.5" fill="none" stroke="%23703A22" stroke-width="1"/%3E%3C/svg%3E');
 }
 
 /* --------------------------------------------------------------------------
@@ -57,22 +67,49 @@ html {
 }
 
 body {
+    position: relative;
+    z-index: 0; /* anchors the atmosphere layer behind in-flow content */
     font-family: var(--font-body);
-    font-size: 1.125rem;
-    line-height: 1.8;
+    font-size: 1.0625rem;
+    line-height: 1.75;
     color: var(--ink);
     background-color: var(--canvas);
-    /* One atmospheric move: a page-length haze, felt more than seen */
-    background-image: linear-gradient(to bottom, var(--canvas) 0%, var(--canvas) 50%, var(--canvas-deep) 85%, var(--haze) 100%);
-    background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: transparent;
     min-height: 100vh;
+    transition: background-color 500ms ease, color 500ms ease;
+}
+
+/* The atmosphere. Light: late warmth gathering at the foot of the page.
+   Dark: a lamp just above the screen — its pool, the mahogany answering
+   in red, the desk edge and the room falling away at the sides.
+   Fixed to the viewport: the light stays, the pages move. */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        rgba(199, 166, 110, 0.05) 78%,
+        rgba(199, 166, 110, 0.11) 100%
+    );
+}
+
+html[data-theme="dark"] body::before {
+    background:
+        radial-gradient(120% 60% at 50% -18%, rgba(255, 184, 110, 0.24), rgba(255, 184, 110, 0.07) 45%, transparent 72%),
+        radial-gradient(140% 80% at 50% -10%, rgba(132, 38, 18, 0.55), rgba(132, 38, 18, 0.18) 55%, transparent 80%),
+        linear-gradient(to bottom, rgba(255, 184, 110, 0.06), transparent 30%),
+        linear-gradient(to bottom, transparent 55%, rgba(10, 3, 2, 0.35) 100%),
+        linear-gradient(to right, rgba(10, 3, 2, 0.30), transparent 14%, transparent 86%, rgba(10, 3, 2, 0.30));
 }
 
 /* Film grain, dialed down */
-body::before {
+body::after {
     content: '';
     position: fixed;
     inset: 0;
@@ -90,8 +127,14 @@ body::before {
 a {
     color: inherit;
     text-decoration: none;
-    transition: color 200ms ease;
     touch-action: manipulation;
+    transition: color 200ms ease, background-color 200ms ease;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 1px solid var(--accent);
+    outline-offset: 4px;
 }
 
 img {
@@ -106,110 +149,150 @@ img {
     padding: 0 var(--s4);
 }
 
+.micro {
+    font-family: var(--font-display);
+    font-size: 0.625rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+}
+
+/* The bent hairline — none of the lines on this site are straight */
+.rule {
+    border: 0;
+    height: 5px;
+    background: var(--rule) repeat-x center / 600px 5px;
+}
+
+.rule--drift {
+    animation: travel 90s linear infinite;
+}
+
+@keyframes travel {
+    to { background-position: 600px center; }
+}
+
+/* --------------------------------------------------------------------------
+   The lamp switch
+   -------------------------------------------------------------------------- */
+
+.theme-toggle {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    touch-action: manipulation;
+}
+
+.theme-toggle::before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid var(--ink-faint);
+    transition: background-color 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
+}
+
+.theme-toggle:hover::before,
+.theme-toggle:active::before {
+    border-color: var(--accent);
+}
+
+html[data-theme="dark"] .theme-toggle::before {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 0 14px rgba(255, 184, 110, 0.5);
+}
+
 /* --------------------------------------------------------------------------
    Site header (index)
    -------------------------------------------------------------------------- */
 
-.site-header {
-    border-bottom: 1px solid var(--hairline);
-}
-
-.site-header-inner {
+.site-top-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: var(--s4);
+    padding-top: var(--s3);
     min-height: 64px;
 }
 
 .wordmark {
+    margin-right: auto;
     font-family: var(--font-display);
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     font-weight: 500;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     color: var(--ink);
     min-height: 44px;
     display: inline-flex;
     align-items: center;
 }
 
-.wordmark:hover {
+.wordmark:hover,
+.wordmark:active {
     color: var(--accent);
 }
 
-.site-nav {
-    display: flex;
-    gap: var(--s4);
-}
-
-.site-nav a {
+.top-link {
     font-family: var(--font-display);
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--ink-faint);
-    padding: var(--s3) 0;
     min-height: 44px;
     display: inline-flex;
     align-items: center;
 }
 
-.site-nav a:hover,
-.site-nav a:active {
+.top-link:hover,
+.top-link:active {
     color: var(--accent);
 }
 
 /* --------------------------------------------------------------------------
-   Hero
+   Statement
    -------------------------------------------------------------------------- */
 
-.hero {
-    padding: var(--s8) 0 var(--s7);
+.statement {
+    padding: clamp(4.5rem, 14vh, 8rem) 0 clamp(3.5rem, 10vh, 6rem);
 }
 
-.hero-name {
-    font-family: var(--font-display);
-    font-size: clamp(3rem, 9vw, 6rem);
-    font-weight: 300;
-    letter-spacing: -0.015em;
-    line-height: 1.0;
-    color: var(--ink);
+.statement h1 {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: clamp(1.75rem, 5vw, 2.875rem);
+    line-height: 1.32;
+    letter-spacing: -0.005em;
+    max-width: 24ch;
+    text-wrap: balance;
 }
 
-.hero-meta {
-    margin-top: var(--s4);
+.statement h1 em {
+    font-style: italic;
+}
+
+/* the only color in the room */
+.stop {
+    color: var(--accent);
+}
+
+.statement .meta {
+    margin-top: 2rem;
     font-family: var(--font-display);
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--ink-faint);
-}
-
-.hero-bio {
-    margin-top: var(--s5);
-    max-width: 52ch;
-    font-size: 1.25rem;
-    line-height: 1.7;
-    color: var(--ink-soft);
-}
-
-/* Quiet entrance — one orchestrated moment, then stillness */
-.hero > * {
-    opacity: 0;
-    transform: translateY(12px);
-    animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-.hero > *:nth-child(1) { animation-delay: 0.05s; }
-.hero > *:nth-child(2) { animation-delay: 0.15s; }
-.hero > *:nth-child(3) { animation-delay: 0.25s; }
-
-@keyframes rise {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* --------------------------------------------------------------------------
@@ -217,95 +300,91 @@ img {
    -------------------------------------------------------------------------- */
 
 .writing {
-    padding-bottom: var(--s8);
+    padding-bottom: var(--s7);
 }
 
-.writing-header {
+.index-head {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     padding-bottom: var(--s3);
-    border-bottom: 1px solid var(--hairline);
 }
 
-.writing-label,
-.writing-count {
-    font-family: var(--font-display);
-    font-size: 0.6875rem;
-    font-weight: 500;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-}
-
-.writing-list {
+.entries {
     list-style: none;
 }
 
-.entry {
-    border-bottom: 1px solid var(--hairline);
+.entry::after {
+    content: '';
+    display: block;
+    height: 5px;
+    background: var(--rule) repeat-x center / 600px 5px;
 }
 
 .entry a {
     display: grid;
-    grid-template-columns: 96px 1fr auto;
-    gap: var(--s4);
+    grid-template-columns: 3.25rem 6rem 1fr auto;
+    grid-template-areas: "no date title tag";
+    gap: 1.25rem;
     align-items: baseline;
-    padding: var(--s4) var(--s3);
-    margin: 0 calc(-1 * var(--s3));
-    transition: background-color 200ms ease;
+    padding: 1.375rem 1rem;
+    margin: 0 -1rem;
 }
+
+.e-no { grid-area: no; }
+.e-date { grid-area: date; }
+.e-title { grid-area: title; }
+.e-tag { grid-area: tag; }
 
 .entry a:hover,
 .entry a:active {
-    background-color: var(--canvas-tint);
+    background-color: var(--tint);
 }
 
-.entry-date {
+.e-no {
     font-family: var(--font-display);
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-faint);
+}
+
+.e-date {
+    font-family: var(--font-display);
+    font-size: 0.625rem;
     font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
+    font-variant-numeric: tabular-nums;
     color: var(--ink-faint);
     white-space: nowrap;
 }
 
-.entry-text {
-    display: block;
-    min-width: 0;
-}
-
-.entry-title {
-    display: block;
-    font-family: var(--font-body);
-    font-size: 1.25rem;
+.e-title {
+    font-size: 1.1875rem;
     font-weight: 500;
-    line-height: 1.3;
-    color: var(--ink);
+    line-height: 1.35;
     transition: color 200ms ease;
 }
 
-.entry a:hover .entry-title {
+.entry a:hover .e-title {
     color: var(--accent);
 }
 
-.entry-desc {
-    display: block;
-    margin-top: var(--s1);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: var(--ink-soft);
-}
-
-.entry-tag {
+.e-tag {
     font-family: var(--font-display);
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--ink-faint);
     white-space: nowrap;
+    transition: color 200ms ease;
+}
+
+.entry a:hover .e-tag {
+    color: var(--accent);
 }
 
 /* --------------------------------------------------------------------------
@@ -313,32 +392,33 @@ img {
    -------------------------------------------------------------------------- */
 
 footer {
-    border-top: 1px solid var(--hairline);
-    padding: var(--s5) 0;
+    padding: var(--s6) 0 var(--s5);
+}
+
+footer .rule {
+    margin-bottom: var(--s4);
 }
 
 .footer-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: var(--s4);
+    flex-direction: column;
+    gap: var(--s2);
 }
 
 .footer-links {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--s4);
+    gap: 0 2.25rem;
 }
 
 .footer-links a {
     font-family: var(--font-display);
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--ink-faint);
-    padding: var(--s3) 0;
+    padding: 0.875rem 0;
     min-height: 44px;
     display: inline-flex;
     align-items: center;
@@ -350,12 +430,12 @@ footer {
 }
 
 .footer-copy {
-    font-family: var(--font-display);
-    font-size: 0.6875rem;
-    font-weight: 500;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 0.8125rem;
+    letter-spacing: 0.02em;
     color: var(--ink-faint);
+    line-height: 2;
 }
 
 /* --------------------------------------------------------------------------
@@ -369,30 +449,32 @@ footer {
 .article-header-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: var(--s4);
     min-height: 64px;
 }
 
 .site-name-small {
+    margin-right: auto;
     font-family: var(--font-display);
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     font-weight: 500;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     color: var(--ink);
     min-height: 44px;
     display: inline-flex;
     align-items: center;
 }
 
-.site-name-small:hover {
+.site-name-small:hover,
+.site-name-small:active {
     color: var(--accent);
 }
 
 .back-link {
     font-family: var(--font-display);
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--ink-faint);
     padding: var(--s3) 0;
@@ -413,7 +495,7 @@ footer {
 .article-container {
     max-width: var(--container-article);
     margin: 0 auto;
-    padding: var(--s7) var(--s4) var(--s8);
+    padding: var(--s7) var(--s4) var(--s7);
 }
 
 .article-meta {
@@ -425,19 +507,20 @@ footer {
 
 .article-date {
     font-family: var(--font-display);
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
+    font-variant-numeric: tabular-nums;
     color: var(--ink-faint);
 }
 
-/* One rule for every tag — culture, tech, finance, series, and the rest */
+/* one rule for every tag */
 .article-tag {
     font-family: var(--font-display);
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--accent);
 }
@@ -468,8 +551,15 @@ footer {
     border: 1px solid var(--hairline);
 }
 
+html[data-theme="dark"] .article-cover img,
+html[data-theme="dark"] .article-content img {
+    opacity: 0.88;
+}
+
 .article-content {
     margin-top: var(--s5);
+    font-size: 1.125rem;
+    line-height: 1.8;
 }
 
 .article-content p {
@@ -539,9 +629,9 @@ footer {
     margin-bottom: var(--s5);
     text-align: center;
     font-family: var(--font-display);
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--ink-faint);
 }
@@ -555,9 +645,9 @@ footer {
 
 .series-nav h3 {
     font-family: var(--font-display);
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--ink-faint);
     margin: 0 0 var(--s3);
@@ -598,41 +688,48 @@ footer {
    Responsive
    -------------------------------------------------------------------------- */
 
+/* Desktop is the unqueried base — no breakpoint gap possible */
+.e-meta-row {
+    display: contents;
+}
+
+.statement .meta span + span::before {
+    content: '\00B7';
+    padding: 0 0.6em;
+}
+
 @media (max-width: 640px) {
-    .hero {
-        padding: var(--s6) 0 var(--s6);
+    .statement .meta span {
+        display: block;
+        line-height: 2.1;
     }
 
-    .hero-bio {
-        font-size: 1.125rem;
-    }
-
-    .writing {
-        padding-bottom: var(--s7);
+    .statement .meta span + span::before {
+        content: none;
     }
 
     .entry a {
-        grid-template-columns: 1fr;
-        gap: var(--s1);
-        padding: var(--s4) var(--s3);
+        grid-template-columns: 3.25rem 1fr;
+        grid-template-areas:
+            "no   meta"
+            "no   title";
+        row-gap: 0.45rem;
+        padding: 1.25rem 1rem;
     }
 
-    .entry-date {
-        order: -1;
+    .e-title {
+        font-size: 1.125rem;
     }
 
-    .entry-tag {
-        margin-top: var(--s1);
+    .e-meta-row {
+        grid-area: meta;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
     }
 
     .article-container {
-        padding: var(--s5) var(--s4) var(--s7);
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: var(--s2);
+        padding: var(--s5) var(--s4) var(--s6);
     }
 }
 
@@ -645,11 +742,13 @@ footer {
         scroll-behavior: auto;
     }
 
+    .rule--drift {
+        animation: none;
+    }
+
     *,
     *::before,
     *::after {
-        animation-duration: 0.01ms !important;
-        animation-delay: 0s !important;
         transition-duration: 0.01ms !important;
     }
 }
