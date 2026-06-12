@@ -1,7 +1,7 @@
 {
-  "name": "nicks-records",
-  "version": "1.0.0",
-  "description": "Nick Chua's personal website - a vinyl record shop themed blog",
+  "name": "nickchua-me",
+  "version": "2.0.0",
+  "description": "Nick Chua's personal website",
   "scripts": {
     "start": "npx serve .",
     "preview": "npx serve . -p 3000"
