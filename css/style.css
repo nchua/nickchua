@@ -210,6 +210,13 @@ html[data-theme="dark"] .theme-toggle::before {
     background-color: var(--accent);
     border-color: var(--accent);
     box-shadow: 0 0 14px rgba(255, 184, 110, 0.5);
+    animation: lamp-breath 5s ease-in-out infinite;
+}
+
+/* the dot breathes like a little sun when the lamp is on */
+@keyframes lamp-breath {
+    0%, 100% { box-shadow: 0 0 13px rgba(255, 184, 110, 0.5); }
+    50%      { box-shadow: 0 0 24px rgba(255, 184, 110, 0.85); }
 }
 
 /* --------------------------------------------------------------------------
@@ -274,10 +281,6 @@ html[data-theme="dark"] .theme-toggle::before {
     letter-spacing: -0.005em;
     max-width: 24ch;
     text-wrap: balance;
-}
-
-.statement h1 em {
-    font-style: italic;
 }
 
 /* the only color in the room */
@@ -742,7 +745,8 @@ html[data-theme="dark"] .article-content img {
         scroll-behavior: auto;
     }
 
-    .rule--drift {
+    .rule--drift,
+    html[data-theme="dark"] .theme-toggle::before {
         animation: none;
     }
 
